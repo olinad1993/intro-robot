@@ -1,3 +1,8 @@
+*** Settings ***
+Documentation   Este é um teste para acessar Amazon.com
+Test Setup      Abrir o navegador
+Test Teardown   Fechar o navegador
+
 *** Test Cases ***
 
 Caso de teste 01 - Acesso ao menu "Eletrônicos"
