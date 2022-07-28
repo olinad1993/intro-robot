@@ -37,3 +37,6 @@ Verificar se aparece a frase "Eletrônicos e Tecnologia"
     [Documentation]     Usando variaveis no titulo
 Verificar se o título da página fica "${TITULO}"
     Title Should Be  title=${TITULO}
+
+Verificar se aparece a categoria "${NOME_CATEGORIA}"
+    Element Should Be Visible   locator=(//a[contains(@aria-label,'${NOME_CATEGORIA}')])[2]
