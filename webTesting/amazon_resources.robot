@@ -55,8 +55,6 @@ Verificar o resultado da pesquisa se esta listando o produto "${PRODUTO}"
 
 
 
-
-
 # GHERKIN BDD #
 Dado que estou na home page da Amazon.com.br
     Acessar a home page do site Amazon.com.br
