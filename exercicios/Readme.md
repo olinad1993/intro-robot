@@ -5,6 +5,12 @@ Pratica de historia de usuário.
 
 [Link Curso - GRATUITO](https://cursos.nutror.com/curso/da7b289db8074db3f62c8ad70280aab260463fde/desafio-7-dias-metodo-pda)
 
+#### Regra de Negócio:
+- Possuir um computador ou um dispositivos móvel
+- Possuir acesso a internet
+ - Possuir cadastro na Amazon.com.br
+ - Nome do produto para a pesquisa
+
 ## Caso 02
 
 **Eu, Como** cliente da Amazon  
