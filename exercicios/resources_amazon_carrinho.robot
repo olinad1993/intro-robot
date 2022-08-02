@@ -8,7 +8,11 @@ ${MENU_ELETRONICOS}     //a[contains(@href,'electronics')]
 ${HEADER_ELETRONICOS}   //h1[contains(.,'Eletrônicos e Tecnologia')]
 ${BOTAO_PESQUISA}       nav-search-submit-button
 ${BTN_ADD_CARRINHO}         add-to-cart-button
+${ADICIONADO_NO_CARRINHO}  //span[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold'][contains(.,'Adicionado ao carrinho')]
 ${CARRINHO}                nav-cart
+${EXCLUIR}                 //input[contains(@value,'Excluir')]
+${REMOVIDO_DO_CARRINHO}   //h1[@class='a-spacing-mini a-spacing-top-base'][contains(.,'Seu carrinho de compras da Amazon está vazio.')]
+
 
 *** Keywords ***
 Abrir navegador
@@ -19,31 +23,44 @@ Fechar navegador
     Capture Page Screenshot
     Close Browser
 
-
 Acessar a home page do site Amazon.com.br
     Go To    url=${URL}
     Wait Until Element Is Visible    locator=${LOGO}
+
+Entrar no menu "Eletrônicos"
+    Click Element    locator=${MENU_ELETRONICOS}
+
+Verificar se aparece a frase "${FRASE}"
+    Wait Until Page Contains    text=${FRASE}
+    Wait Until Element Is Visible    locator=${HEADER_ELETRONICOS}
+
+Verificar se o título da página fica "${TITULO}"
+    Title Should Be    title=${TITULO}
+
+Verificar se aparece a categoria "${NOME_CATEGORIA}"
+    Element Should Be Visible    locator=//a[@aria-label='${NOME_CATEGORIA}']
 
 Digitar o nome de produto "${PRODUTO}" no campo de pesquisa
     Input Text  locator=twotabsearchtextbox  text=${PRODUTO}
 
 Clicar no botão de pesquisa
     Click Element      locator=${BOTAO_PESQUISA}
-    
+
+
 Verificar o resultado da pesquisa se está listando o produto "${PRODUTO}"
-    Wait Until Element Is Visible    locator=(//span[contains(.,'${PRODUTO}')])[2]    
+    Wait Until Element Is Visible    locator=(//span[contains(.,'${PRODUTO}')])[2]
 
 Adicionar o produto "${PRODUTO}" no carrinho
-    Click Element    locator=(//span[contains(.,'${PRODUTO}')])[2]
-    Wait Until Element Is Visible    locator=${BTN_ADD_CARRINHO}
-    Click Element    locator=${BTN_ADD_CARRINHO}
+    Click Element    locator=(//span[@class='a-size-base-plus a-color-base a-text-normal'][contains(.,'${PRODUTO}')])[1]
+    Click Element      locator=${BTN_ADD_CARRINHO}
 
 Verificar se o produto "${PRODUTO}" foi adicionado com sucesso
-    Click Element    locator=${CARRINHO}
+    Click Link      locator=${CARRINHO}
     Wait Until Element Is Visible        locator=//span[@class='a-truncate-cut'][contains(.,'${PRODUTO}')]
 
-## CASO 04 ##
-Remover o produto "${PRODUTO}" do carrinho
-    Click Element    locator=//span[contains(.,'Carrinho')]
-    Click Element    locator=(//span[contains(.,'${PRODUTO}')])[2]
-    Click Element    locator=//input[contains(@name,'submit.delete.C41c07e50-3cb5-4a8a-b84b-fd23258ba712')]
+CASO 04 #
+Remover o produto "Console Xbox Series S" do carrinho
+    Click Element    locator=${EXCLUIR}
+
+Verificar se o carrinho fica vazio
+    Wait Until Element Is Visible    locator=${REMOVIDO_DO_CARRINHO}
