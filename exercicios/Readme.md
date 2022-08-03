@@ -11,19 +11,19 @@ Pratica de historia de usuário.
  - Possuir cadastro na Amazon.com.br
  - Nome do produto para a pesquisa
 
-## Caso 02
+## User Story 02
 
 **Eu, Como** cliente da Amazon  
 **Gostaria**, de pesquisar o produto na barra de pesquisa  
 **Porque, assim** eu consigo ser mais assertivo no produto.*
 
-## Caso 03
+## User Story 03
 
 **Eu, Como** cliente da Amazon  
 **Gostaria, de** incluir o produto no carrinho  
 **Porque, assim** eu consigo fazer a conferência antes de confirmar a compra
 
-## Caso 04
+## User Story 04
 
 **Eu, Como** cliente da Amazon  
 **Gostaria, de** remover o produto do carrinho  
