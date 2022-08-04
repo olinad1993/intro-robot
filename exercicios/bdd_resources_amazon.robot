@@ -76,3 +76,13 @@ Então o produto "Console Xbox Series S" deve ser mostrado no carrinho
 
 
 # Caso de Teste 04 - Remover Produto do Carrinho
+E existe o produto "Console Xbox Series S" no carrinho
+    Quando adicionar o produto "Console Xbox Series S" no carrinho
+    Então o produto "Console Xbox Series S" deve ser mostrado no carrinho
+
+
+Quando remover o produto "Console Xbox Series S" do carrinho
+    Remover o produto "Console Xbox Series S" do carrinho
+
+Então o carrinho deve ficar vazio
+    Verificar se o carrinho fica vazio
