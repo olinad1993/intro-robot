@@ -64,3 +64,14 @@ Remover o produto "Console Xbox Series S" do carrinho
 
 Verificar se o carrinho fica vazio
     Wait Until Element Is Visible    locator=${REMOVIDO_DO_CARRINHO}
+
+
+# Gerkhin BDD #
+Dado que estou na home page da Amazon.com.br
+  Acessar a home page do site Amazon.com.br
+
+Quando adicionar o produto "Console Xbox Series S" no carrinho
+  Adicionar o produto "Console Xbox Series S" no carrinho
+
+Então o produto "Console Xbox Series S" deve ser mostrado no carrinho
+  Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
