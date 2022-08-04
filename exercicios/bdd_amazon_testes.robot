@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation   Esse teste verifica a adição de um produto no carrinho de compras
-Resource        resources_amazon_carrinho
+Resource        ../exercicios/bdd_resources_amazon.robot
 Test Setup      Abrir navegador
 Test Teardown   Fechar navegador
 

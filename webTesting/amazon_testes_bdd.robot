@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation   Este é um teste para acessar Amazon.com
-Resource        amazon_resources.robot
+Resource        bdd_resources_amazon
 Test Setup      Abrir navegador
 Test Teardown   Fechar navegador
 
@@ -8,7 +8,7 @@ Test Teardown   Fechar navegador
 
 Caso de teste 01 - Acesso ao menu "Eletrônicos"
     [Documentation]     Este teste verifica o menu "Eletrônicos do site da amazon.com.br
-    ...                 e verifica a categoria computadores e informática  
+    ...                 e verifica a categoria computadores e informática
     [Tags]              menus   categorias
     Dado que estou na home page da Amazon.com.br
     Quando acessar o menu "Eletrônicos"
