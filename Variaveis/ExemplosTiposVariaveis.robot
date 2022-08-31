@@ -8,7 +8,7 @@ ${SIMPLES}   Vamos ver os tipos de variáveis no robot!
 @{FRUTAS}    morango   banana   maça   uva   abacaxi
 
 #Tipo Dicionário
-&{PESSOA}    nome=May Fernandes   email=mayfernandes@exemplo.com.br   idade=28   sexo=feminino
+&{PESSOA}    nome=Danilo Ferreira   email=danilo@teste.com idade=29   sexo=masculino
 
 *** Test Cases ***
 Caso de teste de exemplo 01
