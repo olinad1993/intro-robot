@@ -1,0 +1,1 @@
+robot -d ./results Tarefa_01\testes_amazon_carrinho.robot
