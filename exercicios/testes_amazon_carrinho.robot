@@ -2,7 +2,7 @@
 Documentation    Este é um teste para adicionar e remover produtos do carrinho
 Resource         resources_amazon_carrinho.robot
 Test Setup        Abrir navegador
-# Test Teardown     Fechar navegador
+Test Teardown     Fechar navegador
 
 *** Test Cases ***
 Caso de Teste 03 - Adicionar Produto no Carrinho
