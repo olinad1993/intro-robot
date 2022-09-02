@@ -4,7 +4,7 @@ Documentation    Exemplos utilizando Dicionario: Quantos dias tem cada mês
 *** Variables ***
 # 2 - Crie uma variável do tipo DICIONÁRIO na seção de variáveis globais que contenha nela os meses do ano e, 
 # para cada mês, informe o número de dias desse mês;
-&{DIAS_POR_MES}        janeiro=31    
+&{DIAS_POR_MES}             janeiro=31    
 ...                         fevereiro=28    
 ...                         marco=31    
 ...                         abril=30    
