@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation   Este é um teste para acessar Amazon.com
-Resource        bdd_resources_amazon
+Resource        amazon_resources.robot
 Test Setup      Abrir navegador
 Test Teardown   Fechar navegador
 
