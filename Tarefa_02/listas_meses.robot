@@ -15,17 +15,17 @@ Caso de teste 01
 *** Keywords ***
 Cenario meses do ano
     Log     Mes 01: ${MES_ANO[0]} 
-    Log     Mes 01: ${MES_ANO[1]} 
-    Log     Mes 01: ${MES_ANO[2]}
-    Log     Mes 01: ${MES_ANO[3]}
-    Log     Mes 01: ${MES_ANO[4]} 
-    Log     Mes 01: ${MES_ANO[5]}
-    Log     Mes 01: ${MES_ANO[6]}
-    Log     Mes 01: ${MES_ANO[7]}
-    Log     Mes 01: ${MES_ANO[8]}
-    Log     Mes 01: ${MES_ANO[9]} 
-    Log     Mes 01: ${MES_ANO[10]} 
-    Log     Mes 01: ${MES_ANO[11]}
+    Log     Mes 02: ${MES_ANO[1]} 
+    Log     Mes 03: ${MES_ANO[2]}
+    Log     Mes 04: ${MES_ANO[3]}
+    Log     Mes 05: ${MES_ANO[4]} 
+    Log     Mes 06: ${MES_ANO[5]}
+    Log     Mes 07: ${MES_ANO[6]}
+    Log     Mes 08: ${MES_ANO[7]}
+    Log     Mes 09: ${MES_ANO[8]}
+    Log     Mes 10: ${MES_ANO[9]} 
+    Log     Mes 11: ${MES_ANO[10]} 
+    Log     Mes 12: ${MES_ANO[11]}
         
 # 4 - Rode os testes e confira se logou tudo certinho!
 
